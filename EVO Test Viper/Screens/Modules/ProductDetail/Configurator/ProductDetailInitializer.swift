@@ -10,9 +10,10 @@ import UIKit
 
 final class ProductDetailInitializer: NSObject {
 
-    //Connect with object on storyboard
+    ///MARK: - Properties
     @IBOutlet weak var productDetailViewController: ProductDetailViewController!
     
+    //MARK: - Life cycle
     override func awakeFromNib() {
         let configurator = ProductDetailConfigurator()
         configurator.configureModuleForViewInput(viewInput: productDetailViewController)

@@ -14,7 +14,6 @@ final class ProductListInteractor {
 
 extension ProductListInteractor: ProductListInteractorInput {
     func fetchProducts(limit: Int, offset: Int, category: Int, sortType: PossibleSortTypes) {
-        
         CatalogService().getDresses(limit: limit, offset: offset, category: category, sortType: sortType, onSuccess: { [weak self] (products) in
             self?.output.prepareDataForDisplay(products)
         }) { [weak self] (error) in

@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class ProductDetailViewController: UIViewController, Alertable {
+final class ProductDetailViewController: UIViewController, Alertable {
 
     // MARK: - Outlets
     @IBOutlet weak private var productImage: UIImageView!

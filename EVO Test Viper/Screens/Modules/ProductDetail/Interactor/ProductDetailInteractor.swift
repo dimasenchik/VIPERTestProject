@@ -7,9 +7,8 @@
 //
 
 final class ProductDetailInteractor {
-    
+    //MARK: - Properties
     weak var output: ProductDetailInteractorOutput!
-
 }
 
 extension ProductDetailInteractor: ProductDetailInteractorInput {

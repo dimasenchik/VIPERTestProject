@@ -14,6 +14,7 @@ class CategoryListRouter: NSObject, CategoryListRouterInput {
     // MARK: Public variables
     weak public var viewController: CategoryListViewController?
     
+    //MARK: - Public methods
     func navigateToList(with categoryId: Int) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "productListVC") as! ProductListViewController

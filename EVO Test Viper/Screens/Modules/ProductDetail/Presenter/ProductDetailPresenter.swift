@@ -6,19 +6,20 @@
 //  Copyright © 2019 Dima Senchik. All rights reserved.
 //
 
+//MARK: - DataModel
 final class ProductDetailDataModel {
     var currentProduct: ProductDomainModel!
     var isFavourite: Bool = false
     var isInCart: Bool = false
 }
 
+//MARK: - ProductDetailPresenter
 final class ProductDetailPresenter {
-
+    //MARK: - Properties
     weak var view: ProductDetailViewInput!
     var interactor: ProductDetailInteractorInput!
     var router: ProductDetailRouterInput!
     var dataModel = ProductDetailDataModel()
-    
 }
 
 // MARK : -  ProductDetailModuleInput

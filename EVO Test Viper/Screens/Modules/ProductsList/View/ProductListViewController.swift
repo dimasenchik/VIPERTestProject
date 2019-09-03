@@ -12,15 +12,15 @@ class ProductListViewController: UIViewController, Alertable {
     
     // MARK: - Properties
     var moduleInput: ProductListModuleInput!
-    
     var output: ProductListViewOutput!
     
     private var products: [ProductDomainModel] = []
     
     // MARK: - Outlets
     @IBOutlet weak private var productsCollectionView: UICollectionView!
-    @IBOutlet weak var sortingTypeLabel: UILabel!
+    @IBOutlet weak private var sortingTypeLabel: UILabel!
     
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         productsCollectionView.delegate = self
@@ -28,12 +28,6 @@ class ProductListViewController: UIViewController, Alertable {
         title = "Товары"
         output.viewIsReady()
     }
-    
-    func reSortProducts(sortType: PossibleSortTypes) {
-        sortingTypeLabel.text = sortType.title
-        output.reSortProducts(sortType)
-    }
-    
 }
 
 private extension ProductListViewController {
@@ -44,7 +38,6 @@ private extension ProductListViewController {
 
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource
 extension ProductListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return products.count
     }
@@ -68,7 +61,6 @@ extension ProductListViewController: UICollectionViewDelegate, UICollectionViewD
 
 // MARK: - ProductListViewInput
 extension ProductListViewController: ProductListViewInput {
-    
     func displayProducts(_ products: [ProductDomainModel], currentSortType: PossibleSortTypes) {
         self.products = products
         DispatchQueue.main.async {

@@ -14,6 +14,7 @@ final class ProductListRouter: NSObject, ProductListRouterInput {
     // MARK: Public variables
     weak public var viewController: ProductListViewController?
     
+    //MARK: - Public methods
     func navigateToDetailScreen(with product: ProductDomainModel) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "productDetailVC") as! ProductDetailViewController

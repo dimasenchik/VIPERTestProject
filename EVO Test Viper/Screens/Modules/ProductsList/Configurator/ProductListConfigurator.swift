@@ -10,15 +10,15 @@ import Foundation
 
 final class ProductListConfigurator {
     
+    //MARK: - Public methods
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-        
         if let viewController = viewInput as? ProductListViewController {
             configure(viewController: viewController)
         }
     }
     
+    //MARK: - Private methods
     private func configure(viewController: ProductListViewController) {
-        
         let router = ProductListRouter()
         router.viewController = viewController
         

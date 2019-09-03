@@ -13,6 +13,7 @@ final class ProductDetailRouter: NSObject, ProductDetailRouterInput {
     // MARK: Public variables
     weak public var viewController: ProductDetailViewController?
     
+    //MARK: - Public methods
     func showOnBuyAlert(with product: ProductDomainModel) {
         guard let productName = product.productName else { return }
         

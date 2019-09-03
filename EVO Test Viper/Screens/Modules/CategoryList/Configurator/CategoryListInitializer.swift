@@ -10,11 +10,11 @@ import UIKit
 
 class CategoryListInitializer: NSObject {
 
-    //Connect with object on storyboard
+    //MARK: - Properties
     @IBOutlet weak var categorylistViewController: CategoryListViewController!
 
+    //MARK: - Life cycle
     override func awakeFromNib() {
-
         let configurator = CategoryListConfigurator()
         configurator.configureModuleForViewInput(viewInput: categorylistViewController)
     }

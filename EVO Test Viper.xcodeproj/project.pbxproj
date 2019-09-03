@@ -199,9 +199,9 @@
 		1127E9BD39BD441A4EB31A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0805CF46F1C316E3B9257291 /* ProductDetailViewController.swift */,
 				968D9B999F5A0D4E1533C307 /* ProductDetailViewInput.swift */,
 				E200662CD273EA71795098D9 /* ProductDetailViewOutput.swift */,
-				0805CF46F1C316E3B9257291 /* ProductDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,8 +225,8 @@
 		2668097E30953621C0A72599 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				A74B832E002DF21CD28B9F98 /* CategoryListModuleInput.swift */,
 				61A030A0C7A9D26FD4DED416 /* CategoryListPresenter.swift */,
+				A74B832E002DF21CD28B9F98 /* CategoryListModuleInput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -260,8 +260,8 @@
 		306F615F7F2940F5F276BEA5 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				1E758F3DF92624E44AC5AAB7 /* ProductDetailRouterInput.swift */,
 				856FCD9C677A486B8C71BF20 /* ProductDetailRouter.swift */,
+				1E758F3DF92624E44AC5AAB7 /* ProductDetailRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -561,9 +561,9 @@
 		B5D7DBE593938ACA2212908F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				13CD8A8FD6EAF0FB4F4146A5 /* ProductDetailInteractor.swift */,
 				12B6536C7E8CED0469F8AB55 /* ProductDetailInteractorInput.swift */,
 				6E31DE10463ABCA38575E62B /* ProductDetailInteractorOutput.swift */,
-				13CD8A8FD6EAF0FB4F4146A5 /* ProductDetailInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -581,8 +581,8 @@
 		C569D541B92FF48B3765B5FE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				BF425516E99085E82BBCE115 /* ProductDetailModuleInput.swift */,
 				F905F11C5074EA1C264063BE /* ProductDetailPresenter.swift */,
+				BF425516E99085E82BBCE115 /* ProductDetailModuleInput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";

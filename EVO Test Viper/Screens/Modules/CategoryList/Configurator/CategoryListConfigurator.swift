@@ -10,13 +10,14 @@ import UIKit
 
 class CategoryListConfigurator {
 
+    //MARK: - Public methods
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? CategoryListViewController {
             configure(viewController: viewController)
         }
     }
 
+    //MARK: - Private methods
     private func configure(viewController: CategoryListViewController) {
 
         let router = CategoryListRouter()

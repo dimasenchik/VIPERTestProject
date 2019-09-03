@@ -11,13 +11,14 @@ import Kingfisher
 
 class ProductListCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var productImage: UIImageView!
-    @IBOutlet weak var productTitle: UILabel!
-    @IBOutlet weak var productPresence: UILabel!
-    @IBOutlet weak var productPrice: UILabel!
+    //MARK: - IBOutlets
+    @IBOutlet weak private var productImage: UIImageView!
+    @IBOutlet weak private var productTitle: UILabel!
+    @IBOutlet weak private var productPresence: UILabel!
+    @IBOutlet weak private var productPrice: UILabel!
     
+    //MARK: - Public methods
     func configureCell(_ data: ProductDomainModel) {
-        
         guard let imageURL = URL(string: data.imageURL) else { return }
         
         guard let price = data.price else { return }
@@ -27,5 +28,4 @@ class ProductListCollectionViewCell: UICollectionViewCell {
         self.productPresence.text = data.presence
         self.productPrice.text = "\(price) грн."
     }
-    
 }

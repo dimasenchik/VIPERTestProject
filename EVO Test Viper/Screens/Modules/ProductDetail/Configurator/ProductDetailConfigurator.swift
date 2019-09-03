@@ -10,13 +10,14 @@ import UIKit
 
 final class ProductDetailConfigurator {
 
+    //MARK: - Public methods
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? ProductDetailViewController {
             configure(viewController: viewController)
         }
     }
 
+    //MARK: - Private methods
     private func configure(viewController: ProductDetailViewController) {
         
         let router = ProductDetailRouter()
